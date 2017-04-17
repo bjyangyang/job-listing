@@ -8,8 +8,10 @@ class Job < ApplicationRecord
       self.save
     end
 
-    def hide!
+  def hide!
       self.is_hidden = true
       self.save
-    end
+  end
+  scope :published, -> { where(is_hidden: false) }
+  scope :recent, -> { order('created_at DESC') }
 end
