@@ -19,12 +19,38 @@
  @import "bootstrap";
  @import "font-awesome";
 
+
+ html {
+   position: relative;
+   min-height: 100%;
+ }
+
+ body {
+   /* Margin bottom by footer height */
+   margin-bottom: 100px;
+   margin-top: 70px;
+ }
+
+
+
  //---------Navbar---------
 
  .navbar-default {
      background-color: #212121;
      border-color: #212121;
      border-radius: 0;
+ }
+
+ .navbar-fixed-top {
+     top: 0px;
+ }
+
+ .navbar-fixed-top, .navbar-fixed-bottom {
+     position: fixed;
+     top: 0px;
+     right: 0;
+     left: 0;
+     z-index: 1030;
  }
 
  .navbar-default .navbar-brand {
@@ -133,15 +159,29 @@
 
    //---------Footer---------
 
-    footer {
-        color: white;
-    }
+    // footer {
+    //     color: white;
+    // }
+    //
+    // footer .footer-below {
+    //     padding: 25px 0;
+    //     background-color: #233140;
+    // }
 
-    footer .footer-below {
-        padding: 25px 0;
-        background-color: #233140;
-    }
+    .footer {
+       position: absolute;
+       bottom: 0;
+       width: 100%;
+       /* Set the fixed height of the footer here */
+       height: 80px;
+       background-color: #222222;
+       margin: 0 -15px;
 
+       p {
+          color: white;
+         margin-top: 25px;
+       }
+      }
 
     //--------Common-------
 
