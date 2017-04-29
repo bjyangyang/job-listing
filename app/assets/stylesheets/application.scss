@@ -94,7 +94,7 @@
   .box {
       background-image: image-url("header.jpg");
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: 100% 100%;
       margin-bottom: 50px;
       margin-top: -20px;
       margin-left: -30px;
@@ -109,12 +109,13 @@
       }
 
       .title {
+          color: #c78d49;
           text-align: center;
           margin-bottom: 80px;
       }
 
       .slogan {
-          color: #222;
+          color: #c78d49;
           margin-top: 10px;
           margin-bottom: 50px;
           text-align: center;
@@ -131,15 +132,49 @@
 
   //---------Content---------
 
+  .content-section-0 {
+      padding: 20px 0;
+      // background-color: #EEEEEE;
+  }
+
    .content-section-a {
        padding: 50px 0;
        background-color: #f8f8f8;
    }
 
    .content-section-b {
+      //  background-color: #a8a5a3;
        padding: 50px 0;
        border-top: 1px solid #e7e7e7;
        border-bottom: 1px solid #e7e7e7;
+   }
+
+   .content-section-c {
+       background-color: #f8f8f8;
+       padding: 50px 0;
+       border-top: 1px solid #e7e7e7;
+       border-bottom: 1px solid #e7e7e7;
+   }
+
+   .content-section-d {
+      //  background-color: #a8a5a3;
+       padding: 50px 0;
+       border-top: 1px solid #e7e7e7;
+       border-bottom: 1px solid #e7e7e7;
+   }
+
+   .content-section-e {
+       background-color: #f8f8f8;
+       padding: 50px 0;
+       border-top: 1px solid #e7e7e7;
+       border-bottom: 1px solid #e7e7e7;
+   }
+
+   .content-section-f {
+      //  background-color: #a8a5a3;
+       padding: 50px 0 0 0;
+       border-top: 1px solid #e7e7e7;
+      //  border-bottom: 1px solid #e7e7e7;
    }
 
    .section-heading-spacer {
@@ -175,7 +210,7 @@
        /* Set the fixed height of the footer here */
        height: 80px;
        background-color: #222222;
-       margin: 0 -15px;
+       margin: 0 15;
 
        p {
           color: white;
